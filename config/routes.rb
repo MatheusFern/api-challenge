@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     namespace :v1 do
     end
   end
+  get '/terms', to: 'documents#terms'
+  get '/privacy', to: 'documents#privacy'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
