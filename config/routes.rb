@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     namespace :v1 do
+      get "/items" => "items#index"
     end
   end
   get '/terms', to: 'documents#terms'
