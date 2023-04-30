@@ -1,8 +1,10 @@
 module Admin::V1
   class ItemsController < ApiController
+    include Paginable
+
     def index
-      @items = Item.all
-      render json: @items
+      @items = Item.page(current_page).per(per_page)
+      render json: @items, meta: meta_attributes(@items),adapter: :json
     end
     def create
       @item = Item.create(item_params)
