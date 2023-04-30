@@ -3,7 +3,9 @@ module Admin::V1
     include Paginable
 
     def index
-      @items = Item.page(current_page).per(per_page)
+      @items = Item.sorted(params[:sort], params[:dir])
+                   .page(current_page)
+                   .per(per_page)
       render json: @items, meta: meta_attributes(@items),adapter: :json
     end
     def create
