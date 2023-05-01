@@ -14,7 +14,8 @@ gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
 
 gem 'devise_token_auth'
-
+gem 'ransack'
+gem 'faker'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 

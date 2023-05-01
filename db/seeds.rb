@@ -5,9 +5,10 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-item = Item.first
-item.items.delete_all
-
-35.time do
- FactoryBot.create(:items,user: user)
+35.times do
+  Item.create(
+    title: Faker::Book.title,
+    desc: Faker::Lorem.sentence,
+    is_active: Faker::Boolean.boolean,
+  ).save
 end
