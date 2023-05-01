@@ -1,6 +1,6 @@
 # Chanllenge API
 
-Essa é uma api de demostração de conhecimentos
+This is a API for knowledge demostration.
 
 <table>
   <tr>
@@ -34,12 +34,19 @@ bundle install
 
 # creation of database and tables
 # change the database.yml for personal enviroment 
-#user: postgres
-#host: localhost
-#password: your personal postgresql password
+# user: postgres
+# host: localhost
+# password: your personal postgresql password
 rails db:create
 rails db:migrate
+# seed of database 
+rails db:seed
 
 # run the project
 rails s
 ```
+
+### Using Insomnia to test the API
+ 
+I personally recommend using the Insomnia for test the API Endpoints.
+Use the file `Insomnia.json` at the root of this project.
