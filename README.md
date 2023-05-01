@@ -33,6 +33,10 @@ cd api-challenge
 bundle install
 
 # creation of database and tables
+# change the database.yml for personal enviroment 
+#user: postgres
+#host: localhost
+#password: your personal postgresql password
 rails db:create
 rails db:migrate
 
