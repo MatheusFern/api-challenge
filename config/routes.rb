@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   namespace :admin do
     namespace :v1 do
       resources :items
-      # get "/items" => "items#index"
-      # post "/items" => "items#create"
+      resources :tasks
+
     end
   end
   get '/terms', to: 'documents#terms'

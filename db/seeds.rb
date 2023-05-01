@@ -12,3 +12,10 @@
     is_active: Faker::Boolean.boolean,
   ).save
 end
+35.times do
+  Task.create(
+    name: Faker::Book.title,
+    body: Faker::Lorem.sentence,
+    is_completed: Faker::Boolean.boolean,
+  ).save
+end

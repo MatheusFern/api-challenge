@@ -3,7 +3,7 @@ class Item < ApplicationRecord
 
 
 
-  # validates :name, presence: true
+  # validates :title, presence: true
   # validates :desc, presence: true
   # validates :is_active, presence: true
 
