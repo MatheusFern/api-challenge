@@ -22,7 +22,7 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   user: postgres
   host: localhost
-  password: mfms4084
+  password: your personal postgresql password
 development:
   <<: *default
   database: apiChallenge_development
